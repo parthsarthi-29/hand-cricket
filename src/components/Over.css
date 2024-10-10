@@ -1,0 +1,35 @@
+.container {
+    position: fixed; /* Cover the whole screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex; /* Center the popup */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    z-index: 1000; /* High z-index to ensure it appears above other elements */
+  }
+  
+  .content {
+    background-color: white; /* Popup background */
+    padding: 50px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    position: relative; /* For positioning if needed */
+  }
+  .select{
+    margin-top: 20px;
+    margin-left: 33px;
+    display: flex;
+    gap:20px;
+  }
+  .h14{
+    margin-top: 10px;
+  }
+  .Playgame{
+    margin-left: 60px;
+  }
+  h2{
+    text-align: center;
+  }

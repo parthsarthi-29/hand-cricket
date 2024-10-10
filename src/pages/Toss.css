@@ -1,0 +1,65 @@
+.Odd:hover{
+    background-color: blue;
+}
+.askodd{
+    display: flex;
+    gap:40px;
+    margin-left: 600px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+}
+.head2{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.Odd{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px 20px; /* Adjust padding to change size */
+        font-size: 20px; /* Controls the size of the text */
+        width: 150px; /* Optional: Set width */
+        height: 50px; /* Optional: Set height */
+        margin-left: 80px;
+        text-align: center;
+        border: 5 solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+}
+    
+      .Eve{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 10px 20px; /* Adjust padding to change size */
+        font-size: 20px; /* Controls the size of the text */
+        width: 150px; /* Optional: Set width */
+        height: 50px; /* Optional: Set height */
+        
+        text-align: center;
+        border: 5 solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    
+}
+.head1{
+    margin-top: 50px;
+    margin-left: 360px;
+}
+.selector{
+    display: flex;
+    
+}
+.home{
+    margin-top: 0px;
+    display: flex;
+    
+}
+.home1{
+    margin-top: 10px;
+    margin-left: 950px;
+}
+.toss1{
+    margin-left: 600px;
+}

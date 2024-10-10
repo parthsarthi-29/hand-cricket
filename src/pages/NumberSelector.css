@@ -1,0 +1,10 @@
+.Boxes{
+    display: flex;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  .Boxes:hover{
+    color: black;
+  }
