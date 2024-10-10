@@ -77,12 +77,46 @@ The home page for the Hand Cricket Simulator. It provides options to start the g
 
 
 ### Screenshots
-1. **Home Page**: 
+1. **Home Page**:
+   
+   ![Screenshot of the App](/public/imgs/ss_1.png)
 
-2. **Toss Page**:
+   This is the Home Page of the Web which asks you an option of play game or how to play.<br><br><br><br><br><br>
+   
+3. **Toss Page**:
 
-3. **Game Play**:
+   ![Screenshot of the App](/public/imgs/ss_2.png)
 
+   This is Toss Page where you select a number beytween 1 to 6 and choose odd or eve and press the play button.<br><br><br><br><br><br>
+   
+   ![Screenshot of the App](/public/imgs/ss_3.png)
+
+   If the sum of your number and computer's number is even/odd and same to which you selected then you won the toss and you can choose to bat or bowl.<br><br><br><br><br><br>
+   
+   ![Screenshot of the App](/public/imgs/ss_4.png)
+
+   If the sum of your number and computer's number is even/odd and different to which you selected then opponent won the toss and he choose to bat or bowl.<br><br><br><br><br><br>
+   
+5. **Game Play**:
+
+   Lets assume computer is Batting First!!
+   
+   ![Screenshot of the App](/public/imgs/ss_5.png)
+
+   It shows innings 1 where the computer who is batting gives a target, Its score increases until your selected number and his number doesn't match if the number matches batsmen gets out.<br><br><br><br><br><br>
+   
+   ![Screenshot of the App](/public/imgs/ss_6.png)
+
+   It shows that computer is out now and you need to bat and chase the target.<br><br><br><br><br><br>
+   
+   ![Screenshot of the App](/public/imgs/ss_7.png)
+
+   Now you bat and your score increases until you reaches the target or you get out.<br><br><br><br><br><br>
+   
+   ![Screenshot of the App](/public/imgs/ss_8.png)
+
+   If you reach the Target Without getting out you Win, if the scores are level the match gets Tied, else you lose the match.  Now here you get an option to play againg which takes you to the toss again.<br><br><br><br><br><br>
+   
 ## Future Improvements
 1. Add more levels and gameplay modes.
 2. Improve the UI for a better experience.
