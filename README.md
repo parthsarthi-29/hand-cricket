@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Hand Cricket Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Hand Cricket Simulator** is a fun, interactive web application where users can play a virtual hand cricket game. The game involves selecting a number and competing against a randomly generated opponent number. The player can choose either **Odd** or **Even** for the toss and decide whether they want to bat or bowl first. 
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Toss Selection**: Users can select either **Odd** or **Even** and play the toss against the opponent's randomly generated number.
+- **Number Selection**: Players choose numbers from **1 to 6** during both batting and bowling.
+- **Innings**: There are two innings – **Batting** and **Bowling**, and the user can either set or chase a target.
+- **Game Modes**: 
+  - Batting Mode: Players try to score as many runs as possible.
+  - Bowling Mode: Players aim to restrict the opponent’s score.
 
-### `npm start`
+## How to Play
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Start the Toss**: Select **Odd** or **Even**, choose a number, and see who wins the toss.
+2. **Play the Game**:
+   - If you bat first, try to score as many runs as you can by selecting numbers.
+   - If you bowl first, aim to stop the opponent from scoring higher than the target.
+3. **Result**: At the end of both innings, the game will display the result (Win, Loss, Tie).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+### **Toss.js**
+This component handles the toss process. It allows users to select **Odd** or **Even**, then compares the user's number with the opponent’s randomly generated number to determine the winner of the toss.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **NumberSelector.js**
+A component that renders selectable numbers for the player. It uses a **map** function to display numbers from **1 to 6**.
 
-### `npm run build`
+### **Batting.js**
+This component handles the batting phase of the game. Players select a number, and a random number is generated for the opponent. Runs are scored if the player’s number is not the same as the opponent's.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **Bowling.js**
+This component handles the bowling phase. Players select a number, and if their number matches the opponent's number, the opponent is out. Otherwise, the opponent scores.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Opponent.js**
+Displays the selected number and opponent’s number along with their respective images. The **Play** button triggers the game logic.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Home.js**
+The home page for the Hand Cricket Simulator. It provides options to start the game or learn how to play.
 
-### `npm run eject`
+## Error Handling
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Alerts are used to handle various errors, such as when no number is selected or when the toss choice is not made. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React.js**: Core framework for building the application.
+- **CSS**: For styling components.
+- **Styled-components**: For handling dynamic styling in the NumberSelector component.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Getting Started
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Node.js** installed on your machine.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Installation
 
-### Code Splitting
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/hand-cricket-simulator.git
+2. **Navigate to the project directory**:
+   ```bash
+   cd hand-cricket-simulator
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Install the dependencies**:
+   ```bash
+   npm install
+ 
+4. **Start the development server**:
+   ```bash
+   npm start
 
-### Analyzing the Bundle Size
+5. **Open http://localhost:3000 to view the app in your browser.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Screenshots
+1. **Home Page**: 
 
-### Advanced Configuration
+2. **Toss Page**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. **Game Play**:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Improvements
+1. Add more levels and gameplay modes.
+2. Improve the UI for a better experience.
+3. Implement multiplayer mode.
